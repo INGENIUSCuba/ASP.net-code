@@ -1,0 +1,74 @@
+@model DataAccess.Models.Company
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Company</h4>
+    <hr />
+    <dl class="">
+        <dt>
+            @Html.DisplayNameFor(model => model.TenantId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenantId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt class="col-md-10">
+            @Html.DisplayNameFor(model => model.TenantAdminEmailAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenantAdminEmailAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HelpMeSupportEmailAddresses)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HelpMeSupportEmailAddresses)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HelpMeWeekDaysToReport)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HelpMeWeekDaysToReport)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HelpMeReportHour)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HelpMeReportHour)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HelpMeLastDayOfReport)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HelpMeLastDayOfReport)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
